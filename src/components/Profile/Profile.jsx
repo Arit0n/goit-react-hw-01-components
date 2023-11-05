@@ -37,8 +37,3 @@ export const Profile = props => {
     </ProfileBox>
   );
 };
-//   username,
-//   tag,
-//   location,
-//   avatar,
-//   stats: { followers, views, likes },
