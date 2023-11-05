@@ -38,6 +38,7 @@ export const Location = styled.p`
   color: rgb(141, 141, 141);
 `;
 export const Item = styled.li`
+  border: 1px solid rgb(227, 227, 227);
   text-align: center;
   padding: 20px;
   width: 100%;

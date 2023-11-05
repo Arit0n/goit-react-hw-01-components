@@ -1,21 +1,22 @@
+import { List, Item, Status, Name, Avatar } from './FriendList.styled';
 export const FriendList = ({ friends }) => {
-  console.log(friends);
   return (
-    <ul class="friend-list">
+    <List>
       {friends.map(friend => {
         return (
-          <li>
-            <span key={friend.id} class="status"></span>
-            <img
-              class="avatar"
+          <Item>
+            <Status key={friend.id} $variant={friend.isOnline}></Status>
+            <Avatar
               src={friend.avatar}
               alt="User avatar"
-              width="48"
+              width="80"
+              height="80"
             />
-            <p class="name">{friend.name}</p>
-          </li>
+
+            <Name>{friend.name}</Name>
+          </Item>
         );
       })}
-    </ul>
+    </List>
   );
 };
