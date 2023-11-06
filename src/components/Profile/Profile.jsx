@@ -10,6 +10,7 @@ import {
   Tag,
   Location,
 } from './Profile.styled';
+
 export const Profile = props => {
   return (
     <ProfileBox>
