@@ -1,6 +1,5 @@
 import { Table, Thead, Th, Td, Tr } from './TransactionHistory.styled';
 export const TransactionHistory = ({ items }) => {
-  console.log(items);
   return (
     <Table>
       <Thead>
